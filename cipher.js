@@ -1,39 +1,39 @@
 window.cipher = {
 
   encode: (textoCifrar, desplazamiento) => {
-      let texto = "";
+      let text = "";
       for (let i = 0; i < textoCifrar.length; i++) {
 
-          let textoSegundo = textoCifrar.charCodeAt(i);
+          let secondText = textoCifrar.charCodeAt(i);
 
-          if (textoSegundo >= 65 && textoSegundo <= 90) {
-              let code = (textoSegundo - 65 + desplazamiento) % 26 + 65;
-              texto += String.fromCharCode(code);
+          if (secondText >= 65 && secondText <= 90) {
+              let code = (secondText - 65 + desplazamiento) % 26 + 65;
+              text += String.fromCharCode(code);
           } else {
-              texto += String.fromCharCode(textoSegundo);
+              text += String.fromCharCode(secondText);
           }
       }
-      return texto;
+      return text;
 
   },
 
 
 
   decode: (textoCifrar, desplazamiento) => {
-      let texto = "";
+      let text = "";
       for (let i = 0; i < textoCifrar.length; i++) {
 
-          let textoSegundo = textoCifrar.charCodeAt(i);
+          let secondText = textoCifrar.charCodeAt(i);
 
-          if (textoSegundo >= 65 && textoSegundo <= 90) {
-              let code = (textoSegundo + 65 - desplazamiento) % 26 + 65;
+          if (secondText >= 65 && secondText <= 90) {
+              let code = (secondText + 65 - desplazamiento) % 26 + 65;
 
-              texto += String.fromCharCode(code);
+              text += String.fromCharCode(code);
           } else {
-              texto += String.fromCharCode(textoSegundo);
+              text += String.fromCharCode(secondText);
           }
       }
-      return texto;
+      return text;
   }
 };
   
