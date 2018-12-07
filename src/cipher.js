@@ -1,4 +1,3 @@
-
 window.cipher = {
 
   encode: (textoCifrar, desplazamiento) => {
@@ -37,7 +36,6 @@ window.cipher = {
       return texto;
   }
 };
-
   
   
   
