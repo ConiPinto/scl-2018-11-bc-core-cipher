@@ -1,45 +1,42 @@
 
-
-
 window.cipher = {
-  
+
   encode: (textoCifrar, desplazamiento) => {
-    let texto = "";
-    for (let i = 0; i< textoCifrar.length; i++){
-    
-    let textoSegundo = textoCifrar.charCodeAt(i);
-    if(textoSegundo >=65 && textoSegundo<=90){
-      let code = (textoSegundo-65+desplazamiento)%26+65;
-      texto += String.fromCharCode(code);
+      let texto = "";
+      for (let i = 0; i < textoCifrar.length; i++) {
 
+          let textoSegundo = textoCifrar.charCodeAt(i);
 
-    }
-    }
-    return texto;
+          if (textoSegundo >= 65 && textoSegundo <= 90) {
+              let code = (textoSegundo - 65 + desplazamiento) % 26 + 65;
+              texto += String.fromCharCode(code);
+          } else {
+              texto += String.fromCharCode(textoSegundo);
+          }
+      }
+      return texto;
 
   },
 
 
-  
+
   decode: (textoCifrar, desplazamiento) => {
-    let texto = "";
-    for (let i = 0; i< textoCifrar.length; i++){
+      let texto = "";
+      for (let i = 0; i < textoCifrar.length; i++) {
 
-    let textoSegundo = textoCifrar.charCodeAt(i);
-    
-    if(textoSegundo >=65 && textoSegundo<=90){
-      let code = (textoSegundo-65-desplazamiento)%26+65;
+          let textoSegundo = textoCifrar.charCodeAt(i);
 
-      if (code<65){
-        code+=26;
+          if (textoSegundo >= 65 && textoSegundo <= 90) {
+              let code = (textoSegundo + 65 - desplazamiento) % 26 + 65;
+
+              texto += String.fromCharCode(code);
+          } else {
+              texto += String.fromCharCode(textoSegundo);
+          }
       }
-      texto += String.fromCharCode(code);
-    }
+      return texto;
   }
-  return texto;
-}
 };
-
 
   
   

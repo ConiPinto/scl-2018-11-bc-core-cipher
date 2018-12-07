@@ -1,13 +1,4 @@
-
-
-/*{
-    margin: 0;
-    padding: 0;
-}*/
-
-
 body {
-    
     background-image: url("http://www.academiamauriceandre.com/wp-content/uploads/2014/09/free-digital-scrapbook-paper-sheet-music-on-black-background1.jpg");
     background-size: cover;
     background-attachment: fixed;
@@ -17,44 +8,11 @@ body {
 
 
 h1 {
-    font-size: 60px;
+    font-size: 70px;
     text-align: center;
     color: white;
-    font-family: edo sz;
-    
-}
-
-.Introducción {
-    font-size: 14px;
-    text-align: center;
-    color: rgb(255, 255, 255);
-    font-family: LeituraSans-Grot 2; 
-    line-height: 1.3;
-    letter-spacing: 0.1em;
-}
-
-.boton {
-    width: 140px;
-    background-color: transparent;
-    padding: 10px ;
-    margin:  10px;
-    color:white;
-    border: 1.5px solid rgb(255, 255, 255);
-    border-radius: 30px;
-    font-family: LeituraSans-Grot 2; 
-    line-height: 1.3;
-    letter-spacing: 0.1em;
-}
-
-#nick{
-    border-radius: 30px;
-    border: 1.5px solid rgb(255, 255, 255);
-}
-
-#bienvenida{
-  color: white;
-  font-size: 20px;
-  font-family: edo sz;
+    font-family: 'Oleo Script', cursive;
+    margin-top: 18%;
 }
 
 #cajadetexto {
@@ -68,59 +26,45 @@ h1 {
     height: 10%;
 }
 
-#botonIngresar {
-    width: 60px;
-    background-color: transparent;
-    color:white;
-    border: 1.5px solid rgb(255, 255, 255);
-    border-radius: 30px;
-    font-family: LeituraSans-Grot 2; 
-    line-height: 1.3;
-    letter-spacing: 0.1em;
-}
-
-#desplegar{
-  display: none;
-  position: center;
-}
-
 h3{
     color: white;
     font-size: 20px;
-    font-family: LeituraSans-Grot 2; 
     line-height: 1.3;
     letter-spacing: 0.1em;
-  }
+    font-family: 'Oleo Script', cursive;
+    margin-top: 15%;
+}
 
-  #resultado{
+#resultado {
     
     border-radius: 5px;
     border: 1.5px solid rgb(255, 255, 255);
-    width: 25%;
-    color: white;
-    padding: 5%;
+    width: 22%;
+    color: rgb(0, 0, 0);
+    padding: 6%;
+    font-family: 'Dosis', sans-serif;
+    background-color: white;
+
 }
 
-  #desplazamiento{
+#desplazamiento {
     border-radius: 8px;
     width: 35px;
     border: 1.5px solid rgb(255, 255, 255);
-  }
+}
 
-  #botoncodificar , #botondescifrar{
+#botoncodificar , #botondescifrar {
     width: 90px;
     background-color: transparent;
     color:white;
     border: 1.5px solid rgb(255, 255, 255);
     border-radius: 40px;
-    font-family: LeituraSans-Grot 2; 
     line-height: 1.3;
     letter-spacing: 0.1em;
-  }
+    font-family: 'Dosis', sans-serif;
+}
 
-
-
-#textoCifrar{
+#textoCifrar {
     border-radius: 5px;
     border: 1.5px solid rgb(255, 255, 255);
     width: 30%;
@@ -128,32 +72,23 @@ h3{
     resize: none;
 }
 
-p{
-    font-size: 12px;
+p {
+    font-size: 13px;
     text-align: center;
     color: rgb(255, 255, 255);
-    font-family: leitura sans; 
     line-height: 1.3;
     letter-spacing: 0.1em;
+    font-family: 'Dosis', sans-serif;
+    margin-top: -6%;
+    
 }
 
-#copyClip{
-    width: 90px;
-    background-color: transparent;
-    color:white;
-    border: 1.5px solid rgb(255, 255, 255);
-    border-radius: 40px;
-    font-family: leitura sans; 
-    line-height: 1.3;
-    letter-spacing: 0.1em;
-}
-
-h5{
+h5 {
     font-size: 10px;
     text-align: left;
     color: rgb(255, 255, 255);
-    font-family: leitura sans; 
     line-height: 1.3;
     letter-spacing: 0.1em;
     text-align: left;
+    font-family: 'Dosis', sans-serif;
 }
