@@ -111,4 +111,3 @@ Con style.css se asignó color, tamaños, estilo, un fondo de imagen y orden a l
 
 Para realizar las pruebas se usó Mocha y se trabajó desde la terminal. 
 
-
