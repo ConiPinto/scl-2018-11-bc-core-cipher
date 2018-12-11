@@ -52,6 +52,7 @@ h3{
     font-family: 'Oleo Script', cursive;
     margin-top: 15%;
     text-align: center;
+    margin-top: 5%;
 }
 
 #resultado {
@@ -199,3 +200,8 @@ h5 {
     background: #ffffff;
     color: rgb(0, 0, 0) !important;
 }
+
+#segundapagina{
+    display: none;
+}
+

@@ -1,5 +1,18 @@
 window.onload = () => {
 
+
+    
+    
+    
+    document.getElementById("siguiente").addEventListener("click", () => {
+        document.getElementById("primerapagina").style.display="none";
+        document.getElementById("segundapagina").style.display="block";
+
+    }),
+
+
+
+
     document.getElementById("botoncodificar").addEventListener("click", () => {
             let encryptText = (document.getElementById("textoCifrar").value).toUpperCase();
             let offset = document.getElementById("desplazamiento").value;
@@ -20,3 +33,6 @@ window.onload = () => {
 
         })
 }
+
+
+
